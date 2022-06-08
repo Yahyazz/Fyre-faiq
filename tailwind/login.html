@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.thymeleaf.org">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fyre | Langkah Mudah Cari Lomba</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'grey-fyre-1': '#0e0e10',
+            'grey-fyre-2': '#18181b',
+            'indigo-fyre-1': '#9147ff',
+            'indigo-fyre-2': '#772ce8',
+          }
+        }
+      }
+    }
+  </script>
+</head>
+
+<body>
+  <div class="h-screen min-h-full flex items-center justify-center pt-4 px-4 sm:px-6 lg:px-8 bg-grey-fyre-1">
+    <div class="max-w-md w-full">
+      <form class="bg-grey-fyre-2 p-10 rounded-lg shadow-lg min-w-full">
+        <h1 class="mt-6 text-center text-3xl font-extrabold text-white">Log in to Fyre</h1>
+        <div>
+          <label class="text-white font-semibold block my-2 text-md" for="username">Username</label>
+          <input class="w-full text-white bg-gray-400 bg-opacity-50 px-4 py-2 rounded-md focus:outline-none" type="text"
+            name="username" id="username" />
+        </div>
+        <div>
+          <label class="text-white font-semibold block my-2 text-md" for="password">Password</label>
+          <input class="w-full text-white bg-gray-400 bg-opacity-50 px-4 py-2 rounded-md focus:outline-none" type="text"
+            name="password" id="password" />
+        </div>
+        <div class="flex mt-4 justify-end items-center">
+          <div class="text-sm">
+            <a href="#" class="font-medium text-indigo-fyre-1 hover:text-indigo-fyre-2 hover:underline">Forgot your
+              password? </a>
+          </div>
+        </div>
+
+        <div class="mt-6">
+          <button type="submit"
+            class="group relative w-full flex justify-center py-2 px-4 border border-transparent text-sm font-extrabold rounded-md text-white bg-indigo-fyre-1 hover:bg-indigo-fyre-2 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-fyre-2">
+            Log in
+          </button>
+        </div>
+        <div class="mt-3 mb-3">
+          <p class="text-center text-gray-300 font-bold">Or</p>
+          <button type="submit"
+            class="group mt-3 relative w-full flex justify-center py-2 px-4 border border-transparent text-sm font-extrabold rounded-md text-white bg-indigo-grey-1 hover:bg-indigo-fyre-1 focus:outline-none ring-1 ring-indigo-fyre-1 focus:ring-indigo-fyre-1 focus:ring-2 focus:ring-offset-2">
+            Create account
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+</body>
+
+</html>
