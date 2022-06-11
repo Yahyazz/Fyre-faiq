@@ -12,59 +12,34 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
     integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <style>
-    .nav-link.active {
-      background-color: #f7f7f7;
-    }
-
-    .nav-link:hover {
-      background-color: #f7f7f7;
-    }
-  </style>
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-lg p-3 position-sticky">
-    <div class="container-fluid">
-      <a class="navbar-brand text-black fw-bold" href="#">Fyre</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
-        aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse d-flex justify-content-center" id="navbarScroll">
-        <ul class="navbar-nav my-2 my-lg-0 navbar-nav-scroll fw-bold d-flex justify-content-center"
-          style="--bs-scroll-height: 100px;">
-          <li class="nav-item">
-            <a class="nav-link px-4 mx-1 py-3 active text-decoration-none text-black rounded-pill" aria-current="page"
-              href="#">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link px-4 mx-1 py-3 text-decoration-none text-black rounded-pill" href="#">People</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link px-4 mx-1 py-3 text-decoration-none text-black rounded-pill" href="#">Opportunities</a>
-          </li>
-        </ul>
-      </div>
-      <div class="d-flex gap-3">
-        <button class="btn btn-primary btn-success fw-bold py-2 px-4 rounded-pill" type="submit">Join
-          Fyre</button>
-        <button class="btn btn-primary btn-success fw-bold rounded-circle" type="submit"><i
-            class="fa-solid fa-user-ninja"></i></button>
-      </div>
+  <header class="header">
+    <div class="header-inner">
+      <nav class="" id="navbar">
+
+      </nav>
     </div>
-  </nav>
-  <div class="container-fluid bg-black p-0 vh-100">
-    <section class="bg-black p-5">
-      <div class="p-5 text-center fs-1 fw-bold">
-        <h1 class="mb-3 display-1 fw-bolder">Find your people<br /> and collaborate</h1>
-        <button class="btn btn-primary btn-success btn-lg mt-5 fw-bold py-3 px-4 rounded-pill" type="submit">Try
-          Fyre For Free</button>
+  </header>
+  <div class="container-fluid bg-warning p-0 pt-5 vh-100">
+    <section class="site-banner p-5 pt-0">
+      <div class="row p-5 banner-col pt-0">
+        <div class="col-lg-6 col-md-12 text-title">
+          <h1 class="fw-bolder">Find your people<br /> and collaborate</h1>
+          <h2 class="fs-4">Setiap hal yang kamu ketahui saat ini punya kisah unik yang mungkin kamu tidak sadari selama
+            ini.</h2>
+        </div>
+        <div class="col-lg-6 col-md-12 banner-image banner-fit">
+          <img src="hero-img.png" alt="banner-img" class="img-fluid img-fit">
+        </div>
       </div>
     </section>
   </div>
-  <div class="container bg-white" style="margin-top: -7rem;">
-    <section class="menu-section bg-black">
+
+  <div class="container bg-white pt-3" style="margin-top: -7rem; border-radius: 32px; border: #a5a5a5 .5px solid">
+    <section class="menu-section">
       <nav class="nav nav-justified">
         <a class="nav-link active" aria-current="page" href="#">Active</a>
         <a class="nav-link" href="#">Much longer nav link</a>
@@ -72,10 +47,30 @@
         <a class="nav-link" href="#">Disabled</a>
       </nav>
     </section>
-    <section class="bg-black p-5">
+    <section class="p-5">
       <div class="row row-cols-1 row-cols-md-3 g-4">
         <div class="col">
-          <div class="card h-100 border-0">
+          <div class="card h-100">
+            <img src="bgcard.png" class="card-img-top bg-black opacity-50" alt="Card Background Top">
+            <div
+              class="rounded-circle bg-black position-relative top-0 start-50 translate-middle d-flex justify-content-center align-items-center"
+              style="width: 7rem; height: 7rem"><i class="fa-solid fa-user-ninja"></i>
+            </div>
+            <div class="card-body text-center" style="margin-top: -4rem">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
+                content. This content is a little bit longer.
+                This is a longer card with supporting text below as a natural lead-in to additional
+                content. This content is a little bit longer.
+                This is a longer card with supporting text below as a natural lead-in to additional
+                content. This content is a little bit longer.
+                This is a longer card with supporting text below as a natural lead-in to additional
+                content. This content is a little bit longer.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
             <img src="bgcard.png" class="card-img-top bg-black opacity-50" alt="Card Background Top">
             <div
               class="rounded-circle bg-black position-relative top-0 start-50 translate-middle d-flex justify-content-center align-items-center"
@@ -89,7 +84,7 @@
           </div>
         </div>
         <div class="col">
-          <div class="card h-100 border-0">
+          <div class="card h-100">
             <img src="bgcard.png" class="card-img-top bg-black opacity-50" alt="Card Background Top">
             <div
               class="rounded-circle bg-black position-relative top-0 start-50 translate-middle d-flex justify-content-center align-items-center"
@@ -103,21 +98,7 @@
           </div>
         </div>
         <div class="col">
-          <div class="card h-100 border-0">
-            <img src="bgcard.png" class="card-img-top bg-black opacity-50" alt="Card Background Top">
-            <div
-              class="rounded-circle bg-black position-relative top-0 start-50 translate-middle d-flex justify-content-center align-items-center"
-              style="width: 7rem; height: 7rem"><i class="fa-solid fa-user-ninja"></i>
-            </div>
-            <div class="card-body text-center" style="margin-top: -4rem">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
-                content. This content is a little bit longer.</p>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card h-100 border-0">
+          <div class="card h-100">
             <img src="bgcard.png" class="card-img-top bg-black opacity-50" alt="Card Background Top">
             <div class="card-body">
               <h5 class="card-title">Card title</h5>
@@ -129,6 +110,18 @@
       </div>
     </section>
   </div>
+  <div class="container bg-white p-5 vh-50">
+    <section class="bg-white p-5">
+      <div class="p-5 text-center fw-bold">
+        <h1 class="mb-3 display-3 fw-bolder">Ingin Lombamu Eksis di Website?</h1>
+        <button class="btn btn-primary btn-success btn-lg mt-5 fw-bold py-3 px-4 rounded-pill" type="submit">Coba
+          Sekarang</button>
+      </div>
+    </section>
+  </div>
+  <footer class="mt-5" style="height: 100px; border-top: #a5a5a5 .5px solid">
+
+  </footer>
 
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
