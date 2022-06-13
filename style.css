@@ -30,13 +30,12 @@
   background-color: #fff;
   border-radius: 32px;
   flex-wrap: wrap;
-  padding: 0 12px;
+  padding: 12px 12px 0 12px;
+  box-shadow: 0 5px 10px #c3c3c3;
 }
 
 .header-inner,
 .header-logo {
-  align-items: center;
-  display: flex;
   height: 64px;
 }
 
